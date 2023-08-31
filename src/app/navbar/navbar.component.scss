@@ -1,0 +1,55 @@
+$navbar-bg-color: #219ebc;
+$navbar-hover-color: #023047;
+$navbar-text-color: white;
+$navbar-font-size: 1.5em;
+
+.navbar {
+  background-color: $navbar-bg-color;
+  color: $navbar-text-color;
+  display: flex;
+  justify-content: flex-start;
+  font-size: $navbar-font-size;
+
+  a {
+    color: $navbar-text-color;
+    text-decoration: none;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+
+    #brand {
+      margin-left: 1rem;
+    }
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  .navbar-menu {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        padding: 1.5rem;
+
+        &:hover {
+          text-decoration: underline;
+          background-color: $navbar-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: darken($navbar-bg-color, 10%);
+}
