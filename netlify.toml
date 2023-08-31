@@ -1,0 +1,6 @@
+[build]
+  command = "ng build --configuration production && ng run monis-tierwohl:serverless:production"
+  publish = "dist/monis-tierwohl/browser"
+
+[[plugins]]
+  package = "@netlify/plugin-angular-universal"
