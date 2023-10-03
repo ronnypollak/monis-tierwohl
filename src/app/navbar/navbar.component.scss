@@ -44,6 +44,7 @@ $navbar-font-size: 1.5em;
         &:hover {
           text-decoration: underline;
           background-color: $navbar-hover-color;
+          cursor: pointer;
         }
       }
     }
