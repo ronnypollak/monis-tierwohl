@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,16 +7,13 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  @ViewChild('animalVideo', { static: true }) animalVideo!: ElementRef;
+  constructor(private router: Router) {}
 
-  constructor() {}
-
-  ngOnInit(): void {
-    this.muteVideo();
+  toStories() {
+    this.router.navigate(['/stories']);
   }
 
-  muteVideo(): void {
-    const video: HTMLVideoElement = this.animalVideo.nativeElement;
-    video.muted = true;
+  toServices() {
+    this.router.navigate(['/services']);
   }
 }
