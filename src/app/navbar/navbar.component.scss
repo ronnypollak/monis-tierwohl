@@ -39,8 +39,8 @@ $navbar-font-size: 1.5em;
     }
 
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
     }
   }
 
@@ -54,10 +54,10 @@ $navbar-font-size: 1.5em;
       li {
         a {
           display: block; // Make the anchor block-level
-          padding: 1.5rem;
+          padding: 1rem;
           color: $navbar-text-color;
           text-decoration: none;
-          transition: background-color 0.3s ease, color 0.3s ease;
+          transition: background-color 0.5s ease, color 0.5s ease;
 
           &:hover {
             text-decoration: underline;
