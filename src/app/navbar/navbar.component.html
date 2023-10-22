@@ -1,14 +1,19 @@
 <nav class="navbar">
   <div class="navbar-brand">
-    <a href="#">
+    <a routerLink="/home">
       <img src="assets/logo-removebg.png" alt="Logo" class="navbar-logo" />
     </a>
-    <a id="brand" href="#">Monis Tierwohl</a>
+    <a id="brand" routerLink="/home">Monis Tierwohl</a>
   </div>
   <div class="navbar-menu">
     <ul>
-      <li routerLinkActive="active"><a routerLink="/">Home</a></li>
-      <li routerLinkActive="active"><a routerLink="/about">Erfahrungen</a></li>
+      <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+      <li routerLinkActive="active">
+        <a routerLink="/geschichte">Meine Geschichte</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/erfahrungen">Erfahrungen</a>
+      </li>
       <li routerLinkActive="active">
         <a routerLink="/dienstleistungen">Dienstleistungen</a>
       </li>

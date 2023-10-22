@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-stories',
-  templateUrl: './stories.component.html',
-  styleUrls: ['./stories.component.scss'],
+  selector: 'app-experiences',
+  templateUrl: './experiences.component.html',
+  styleUrls: ['./experiences.component.scss'],
 })
-export class StoriesComponent {
+export class ExperiencesComponent {
   @ViewChild('animalVideo', { static: true }) animalVideo!: ElementRef;
 
   constructor() {}
