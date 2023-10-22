@@ -8,12 +8,4 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(private router: Router) {}
-
-  toStories() {
-    this.router.navigate(['/stories']);
-  }
-
-  toServices() {
-    this.router.navigate(['/services']);
-  }
 }
