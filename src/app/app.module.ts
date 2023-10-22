@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     FooterComponent,
     ServicesComponent,
     ExperiencesComponent,
+    StoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
