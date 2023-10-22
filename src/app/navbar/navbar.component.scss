@@ -44,12 +44,17 @@ $navbar-font-size: 1.5em;
       display: flex;
 
       li {
-        padding: 1.5rem;
+        a {
+          display: block; // Make the anchor block-level
+          padding: 1.5rem;
+          color: $navbar-text-color;
+          text-decoration: none;
 
-        &:hover {
-          text-decoration: underline;
-          background-color: $navbar-hover-color;
-          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+            background-color: $navbar-hover-color;
+            cursor: pointer;
+          }
         }
       }
     }
