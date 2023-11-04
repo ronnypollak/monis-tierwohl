@@ -1,5 +1,5 @@
-$navbar-bg-color: #219ebc;
-$navbar-hover-color: #023047;
+$navbar-bg-color: #0a3a17;
+$navbar-hover-color: #03611c;
 $navbar-text-color: white;
 $navbar-font-size: 1.5em;
 
@@ -71,5 +71,6 @@ $navbar-font-size: 1.5em;
 }
 
 .active {
-  background-color: darken($navbar-bg-color, 10%);
+  // background-color: darken($navbar-bg-color, 10%);
+  background-color: darken($navbar-hover-color, 5%);
 }
