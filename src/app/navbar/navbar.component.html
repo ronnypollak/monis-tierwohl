@@ -14,8 +14,25 @@
       <li routerLinkActive="active">
         <a routerLink="/erfahrungen">Erfahrungen</a>
       </li>
-      <li routerLinkActive="active">
-        <a routerLink="/dienstleistungen">Dienstleistungen</a>
+      <!-- Dropdown within Navbar -->
+      <li
+        class="dropdown"
+        (mouseenter)="dropdownOpen = true"
+        (mouseleave)="dropdownOpen = false"
+      >
+        <a routerLinkActive="active" routerLink="/dienstleistungen"
+          >Dienstleistungen</a
+        >
+        <div class="dropdown-content" *ngIf="dropdownOpen">
+          <a routerLink="/dienstleistungen" fragment="tierkommunikation"
+            >Tierkommunikation</a
+          >
+          <a routerLink="/dienstleistungen" fragment="channeling">Channeling</a>
+          <a routerLink="/dienstleistungen" fragment="quantenheilung"
+            >Quantenheilung</a
+          >
+          <a routerLink="/dienstleistungen" fragment="buchen">Buchen</a>
+        </div>
       </li>
       <li routerLinkActive="active"><a routerLink="/contact">Kontakt</a></li>
       <li routerLinkActive="active">
