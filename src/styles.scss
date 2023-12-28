@@ -13,9 +13,9 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: #488a3c;
+  background-color: #3d1308;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -30,12 +30,18 @@ button:active {
   transform: translateY(1px);
 }
 
+/* Larger button styles */
+.button-large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
