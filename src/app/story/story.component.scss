@@ -8,3 +8,21 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  width: 80%;
+}
+
+.grid-item {
+  margin: 10px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+grid-item img {
+  max-width: 100%; /* Optional: ensures the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
