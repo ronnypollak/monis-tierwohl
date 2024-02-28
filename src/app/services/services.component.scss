@@ -1,0 +1,52 @@
+.tiles {
+  display: flex;
+  width: 100%;
+  margin: 10px 0 10px 0;
+
+  a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures text color is not changed */
+  }
+}
+
+.tile {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-image: url("../../assets/maxi.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .text {
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 10px;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+}
