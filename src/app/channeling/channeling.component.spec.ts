@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ChannelingComponent } from './channeling.component';
+
+describe('ChannelingComponent', () => {
+  let component: ChannelingComponent;
+  let fixture: ComponentFixture<ChannelingComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [ChannelingComponent]
+    });
+    fixture = TestBed.createComponent(ChannelingComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
