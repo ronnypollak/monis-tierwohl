@@ -13,6 +13,7 @@ import { StoryComponent } from './story/story.component';
 import { TierkommunikationComponent } from './tierkommunikation/tierkommunikation.component';
 import { ChannelingComponent } from './channeling/channeling.component';
 import { QuantenheilungComponent } from './quantenheilung/quantenheilung.component';
+import { BuchenComponent } from './buchen/buchen.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { QuantenheilungComponent } from './quantenheilung/quantenheilung.compone
     TierkommunikationComponent,
     ChannelingComponent,
     QuantenheilungComponent,
+    BuchenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
