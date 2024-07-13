@@ -8,6 +8,7 @@ import { TierkommunikationComponent } from './tierkommunikation/tierkommunikatio
 import { ChannelingComponent } from './channeling/channeling.component';
 import { QuantenheilungComponent } from './quantenheilung/quantenheilung.component';
 import { BuchenComponent } from './buchen/buchen.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     path: 'dienstleistungen/buchen',
     component: BuchenComponent,
   },
+  { path: '/kontakt', component: KontaktComponent },
 ];
 
 @NgModule({
