@@ -32,7 +32,7 @@ const routes: Routes = [
     path: 'dienstleistungen/buchen',
     component: BuchenComponent,
   },
-  { path: '/kontakt', component: KontaktComponent },
+  { path: 'kontakt', component: KontaktComponent },
 ];
 
 @NgModule({
