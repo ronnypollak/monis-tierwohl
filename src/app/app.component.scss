@@ -4,9 +4,14 @@
   min-height: 100vh;
 }
 
-.content {
+.wrapper-content-wide {
+}
+
+// Take up all the heigt so footer is at the bottom and margin-top so the content is not hidden underneath the navbar
+.wrapper-content {
   flex: 1;
-  margin-top: 85px;
+  margin-top: 59px;
+  margin-bottom: 20px;
 }
 
 .footer {
