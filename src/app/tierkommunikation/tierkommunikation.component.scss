@@ -1,0 +1,39 @@
+$header-text-color: white;
+
+.header {
+  background-image: url("../../assets/forest.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $header-text-color;
+  }
+}
+
+.header-menu {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      a {
+        display: block; // Make the anchor block-level
+        padding: 1rem;
+        color: $header-text-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  display: block !important;
+}
