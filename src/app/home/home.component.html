@@ -1,55 +1,141 @@
 <div class="main-container">
-  <div class="header">
-    <h1>Tiergespräche - Brücken bauen, Herzen öffnen</h1>
-  </div>
-  <div class="content">
-    <div class="tiles">
-      <a routerLink="/geschichte"
-        ><div class="tile who">
-          <div class="title"><h2>Wer sind wir?</h2></div>
-        </div></a
-      >
-      <a routerLink="/dienstleistungen"
-        ><div class="tile services">
-          <div class="title"><h2>Dienstleistungen & Services</h2></div>
-        </div></a
-      >
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1>
+      Tiergespräche -
+      <span class="highlight-text">Brücken bauen, Herzen öffnen</span>
+    </h1>
+    <div class="hero-image-container">
+      <img src="assets/maxi_moni.png" alt="Moni with Maxi" class="hero-image" />
     </div>
-    <h2>Willkommen bei Moni's Tierwohl!</h2>
-    <p>
-      Hier bei Monis Tierwohl sind wir auf einer Mission, die Brücke zwischen
-      Menschen und Tieren zu stärken und ein tieferes Verständnis für unsere
-      tierischen Gefährten zu fördern.
-    </p>
-    <p>
-      Unsere Dienstleistungen umfassen nicht nur die Tierkommunikation, sondern
-      erstrecken sich auch auf Bereiche wie das Channeling und die
-      Quantenheilung. Diese Therapien bieten sowohl Tieren als auch Menschen die
-      Möglichkeit, Stress abzubauen, Schmerzen zu lindern und ein allgemeines
-      Wohlbefinden zu fördern.
-    </p>
-    <p>
-      Und während wir diese transformierenden Erlebnisse teilen, geht jedes
-      bisschen Profit, das wir erzielen, direkt an Tierschutzorganisationen.
-      Denn unser Herz schlägt für das Wohl der Tiere.
-    </p>
-    <p>
-      Ob Sie mehr über die Bedürfnisse und Wünsche Ihres Tieres erfahren möchten
-      oder nach alternativen Heilmethoden für sich selbst suchen – Sie sind hier
-      genau richtig. Lassen Sie uns gemeinsam in diese wundervolle Welt der
-      energetischen Heilung und Kommunikation eintauchen!
-    </p>
   </div>
-  <div class="buttons">
-    <button class="button-large" id="btn_experiences" routerLink="/erfahrungen">
-      Hier gehts zu Erfahrungen
-    </button>
-    <button
-      class="button-large"
-      id="btn_services"
-      routerLink="/dienstleistungen"
-    >
-      Hier gehts zu den Dienstleistungen
-    </button>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Mission Statement -->
+    <div class="mission-statement">
+      <p>
+        <strong>Moni's Tierwohl</strong> – Wo jedes Tier eine Stimme bekommt und
+        jeder Euro dem Tierschutz hilft.
+      </p>
+    </div>
+
+    <!-- Navigation Tiles -->
+    <div class="tiles">
+      <a routerLink="/geschichte" class="tile-wrapper">
+        <div class="tile who">
+          <div class="title"><h2>Wer sind wir?</h2></div>
+        </div>
+        <div class="tile-description">
+          Erfahren Sie mehr über unsere Geschichte und Mission
+        </div>
+      </a>
+      <a routerLink="/dienstleistungen" class="tile-wrapper">
+        <div class="tile services">
+          <div class="title"><h2>Dienstleistungen & Services</h2></div>
+        </div>
+        <div class="tile-description">
+          Entdecken Sie unsere ganzheitlichen Angebote für Tiere und Menschen
+        </div>
+      </a>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h2>Willkommen bei <span class="accent">Moni's Tierwohl!</span></h2>
+      <div class="welcome-content">
+        <p>
+          Hier bei Monis Tierwohl sind wir auf einer Mission, die Brücke
+          zwischen Menschen und Tieren zu stärken und ein tieferes Verständnis
+          für unsere tierischen Gefährten zu fördern.
+        </p>
+        <p>
+          Unsere Dienstleistungen umfassen nicht nur die Tierkommunikation,
+          sondern erstrecken sich auch auf Bereiche wie das Channeling und die
+          Quantenheilung. Diese Therapien bieten sowohl Tieren als auch Menschen
+          die Möglichkeit, Stress abzubauen, Schmerzen zu lindern und ein
+          allgemeines Wohlbefinden zu fördern.
+        </p>
+
+        <!-- Donation Highlight Box -->
+        <div class="highlight-box">
+          <div class="highlight-icon">❤️</div>
+          <div class="highlight-content">
+            <h3>100% für den Tierschutz</h3>
+            <p>
+              Jeder Euro zählt! <strong>100% unserer Einnahmen</strong> gehen
+              direkt an Tierschutzorganisationen. Denn unser Herz schlägt für
+              das Wohl der Tiere.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Ob Sie mehr über die Bedürfnisse und Wünsche Ihres Tieres erfahren
+          möchten oder nach alternativen Heilmethoden für sich selbst suchen –
+          Sie sind hier genau richtig. Lassen Sie uns gemeinsam in diese
+          wundervolle Welt der energetischen Heilung und Kommunikation
+          eintauchen!
+        </p>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <h2 class="section-title">Unsere Angebote</h2>
+    <div class="features-section">
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🐾</div>
+        </div>
+        <h3>Tierkommunikation</h3>
+        <p>
+          Verstehen Sie die Bedürfnisse und Wünsche Ihrer tierischen Begleiter
+          besser
+        </p>
+        <a routerLink="/dienstleistungen/tierkommunikation" class="feature-link"
+          >Mehr erfahren</a
+        >
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">✨</div>
+        </div>
+        <h3>Ganzheitliche Heilung</h3>
+        <p>Wohlbefinden für Tier und Mensch durch energetische Methoden</p>
+        <a routerLink="/dienstleistungen" class="feature-link">Mehr erfahren</a>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon">🌿</div>
+        </div>
+        <h3>Tierschutz</h3>
+        <p>Unsere Einnahmen unterstützen direkt Tierschutzorganisationen</p>
+        <a routerLink="/kontakt" class="feature-link">Kontakt aufnehmen</a>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial">
+      <p class="quote">
+        "Moni hat mir geholfen, meinen Hund besser zu verstehen. Eine wunderbare
+        Erfahrung!"
+      </p>
+      <p class="author">- Maria S., Hundebesitzerin</p>
+    </div>
+  </div>
+
+  <!-- Call to Action Buttons -->
+  <div class="cta-section">
+    <h3>Bereit, Ihr Tier besser zu verstehen?</h3>
+    <div class="cta-buttons">
+      <button class="button-large" routerLink="/erfahrungen">
+        Zu den Erfahrungen
+      </button>
+      <button class="button-large" routerLink="/dienstleistungen">
+        Zu den Dienstleistungen
+      </button>
+    </div>
   </div>
 </div>
