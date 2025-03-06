@@ -2,51 +2,97 @@
   <div class="header">
     <h1>Entdecke unsere Dienstleistungen:</h1>
   </div>
+
   <div class="content">
-    <p>
-      Alle Dienstleistungen können persönlich mit Termin oder online
-      durchgeführt werden. Für eine Fernberatung sind Bilder und/oder eine
-      detaillierte Beschreibung des Anliegens erforderlich. Für weitere Details
-      kontaktiere uns <a href="/kontakt">hier</a>.
-    </p>
-    <p>
-      100% unserer Einnahmen gehen an
-      <a href=""
-        ><span style="font-weight: 900">Tierschutzorganisationen</span></a
-      >
-    </p>
-    <div class="tiles">
-      <div class="column">
-        <a routerLink="/dienstleistungen/tierkommunikation"
-          ><div class="tile">
-            <div class="title"><h2>Tierkommunikation</h2></div>
-          </div></a
-        >
-        <p class="tile-text">Versteh dein Tier besser durch einfühlsame Kommunikation.</p>
-        <p>Preis: 30€</p>
+    <div class="intro">
+      <p>
+        Alle Dienstleistungen können persönlich mit Termin oder online
+        durchgeführt werden. Für eine Fernberatung sind Bilder und/oder eine
+        detaillierte Beschreibung des Anliegens erforderlich. Für weitere
+        Details kontaktiere uns
+        <a routerLink="/kontakt" class="highlight-link">hier</a>.
+      </p>
+      <p class="donation-info">
+        <span class="highlight">100% unserer Einnahmen</span> gehen an
+        <a href="" class="highlight-link">Tierschutzorganisationen</a>
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-image tierkommunikation">
+          <div class="service-title">
+            <h2>Tierkommunikation</h2>
+          </div>
+        </div>
+        <div class="service-details">
+          <p class="service-description">
+            Versteh dein Tier besser durch einfühlsame Kommunikation.
+          </p>
+          <p class="service-price">Preis: <span class="price">30€</span></p>
+          <div class="service-actions">
+            <button
+              routerLink="/dienstleistungen/tierkommunikation"
+              class="service-button"
+            >
+              Mehr erfahren
+            </button>
+            <button routerLink="/buchen" class="service-button book-button">
+              Buchen
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <a routerLink="/dienstleistungen/channeling"
-          ><div class="tile">
-            <div class="title"><h2>Channeling</h2></div>
-          </div></a
-        >
-        <p class="tile-text">
-          Erhalte spirituelle Führung und Einsichten für ein erfülltes Leben.
-        </p>
-        <p>Preis: 40€</p>
+
+      <div class="service-card">
+        <div class="service-image channeling">
+          <div class="service-title">
+            <h2>Channeling</h2>
+          </div>
+        </div>
+        <div class="service-details">
+          <p class="service-description">
+            Erhalte spirituelle Führung und Einsichten für ein erfülltes Leben.
+          </p>
+          <p class="service-price">Preis: <span class="price">40€</span></p>
+          <div class="service-actions">
+            <button
+              routerLink="/dienstleistungen/channeling"
+              class="service-button"
+            >
+              Mehr erfahren
+            </button>
+            <button routerLink="/buchen" class="service-button book-button">
+              Buchen
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <a routerLink="/dienstleistungen/quantenheilung"
-          ><div class="tile">
-            <div class="title"><h2>Quantenheilung</h2></div>
-          </div></a
-        >
-        <p class="tile-text">
-          Erlebe die heilende Energie der Quantenwelt – für ein harmonisches
-          Leben
-        </p>
-        <p>Preis: 40€</p>
+
+      <div class="service-card">
+        <div class="service-image quantenheilung">
+          <div class="service-title">
+            <h2>Quantenheilung</h2>
+          </div>
+        </div>
+        <div class="service-details">
+          <p class="service-description">
+            Erlebe die heilende Energie der Quantenwelt – für ein harmonisches
+            Leben.
+          </p>
+          <p class="service-price">Preis: <span class="price">40€</span></p>
+          <div class="service-actions">
+            <button
+              routerLink="/dienstleistungen/quantenheilung"
+              class="service-button"
+            >
+              Mehr erfahren
+            </button>
+            <button routerLink="/buchen" class="service-button book-button">
+              Buchen
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

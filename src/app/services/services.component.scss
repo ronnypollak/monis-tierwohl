@@ -1,53 +1,147 @@
-.tiles {
-  display: flex;
+// Main layout styling
+.content {
   width: 100%;
-  margin: 10px 0 10px 0;
 
-  a {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Ensures text color is not changed */
+  p {
+    line-height: 1.6;
   }
 }
 
-.tile {
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #3d1308;
+}
+
+.highlight-link {
+  color: #3d1308;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.donation-info {
+  font-size: 1.1em;
+  margin-top: 1.5rem;
+  padding: 10px;
+  background-color: rgba(61, 19, 8, 0.05);
+  border-radius: 8px;
+}
+
+// Service grid layout
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+// Service card styling
+.service-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.service-image {
   height: 200px;
-  width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-image: url("../../assets/maxi.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  cursor: pointer;
 
-  .title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 15px;
-    border-radius: 0 0 20px 20px;
+  &.tierkommunikation {
+    background-image: url("../../assets/maxi_eyes.png");
+  }
 
-    h2 {
-      margin: 0;
-    }
+  &.channeling {
+    background-image: url("../../assets/forest.jpg");
+  }
+
+  &.quantenheilung {
+    background-image: url("../../assets/maxi_moni.png");
   }
 }
 
-.tile-text {
-  margin-top: 10px;
+.service-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 12px 0 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #3d1308;
+  }
 }
 
-.column {
+.service-details {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: 10px;
+  flex-grow: 1;
 }
 
-.tile:hover {
-  transform: translateY(-5px);
+.service-description {
+  margin-top: 0;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.service-price {
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  .price {
+    font-size: 1.2rem;
+    color: #3d1308;
+  }
+}
+
+.service-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.service-button {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+
+  &.book-button {
+    background-color: #3d1308;
+    font-weight: 600;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-actions {
+    flex-direction: column;
+  }
 }
