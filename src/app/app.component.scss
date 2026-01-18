@@ -7,8 +7,14 @@
 // Take up all the heigt so footer is at the bottom and margin-top so the content is not hidden underneath the navbar
 .wrapper-content {
   flex: 1;
-  margin-top: 59px;
+  margin-top: 80px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapper-content {
+    margin-top: 70px;
+  }
 }
 
 .footer {
