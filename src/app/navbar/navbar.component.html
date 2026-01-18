@@ -1,43 +1,78 @@
 <nav class="navbar">
-  <div class="navbar-brand">
-    <a routerLink="/home">
-      <img src="assets/logo-removebg.png" alt="Logo" class="navbar-logo" />
-    </a>
-    <a id="brand" routerLink="/home">Monis Tierwohl</a>
-  </div>
-  <div class="navbar-menu">
-    <ul>
-      <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
-      <li routerLinkActive="active">
-        <a routerLink="/geschichte">Unsere Geschichte</a>
-      </li>
-      <li routerLinkActive="active">
-        <a routerLink="/erfahrungen">Erfahrungen</a>
-      </li>
-      <!-- Dropdown within Navbar -->
-      <li
-        class="dropdown"
-        (mouseenter)="dropdownOpen = true"
-        (mouseleave)="dropdownOpen = false"
-      >
-        <a routerLinkActive="active" routerLink="/dienstleistungen"
-          >Dienstleistungen</a
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <a routerLink="/home">
+        <img src="assets/logo-removebg.png" alt="Logo" class="navbar-logo" />
+      </a>
+      <a id="brand" routerLink="/home">Monis Tierwohl</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+      <span [class.open]="mobileMenuOpen"></span>
+      <span [class.open]="mobileMenuOpen"></span>
+      <span [class.open]="mobileMenuOpen"></span>
+    </div>
+
+    <!-- Desktop and Mobile Menu -->
+    <div class="navbar-menu" [class.open]="mobileMenuOpen">
+      <ul>
+        <li routerLinkActive="active">
+          <a routerLink="/home" (click)="closeMobileMenu()">Home</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/geschichte" (click)="closeMobileMenu()"
+            >Unsere Geschichte</a
+          >
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/erfahrungen" (click)="closeMobileMenu()"
+            >Erfahrungen</a
+          >
+        </li>
+        <!-- TODO: Fix Issues on Mobile that you can hover over the dropdown to open it. A click on the dropdown item brings u to the dienstleistungen directly -->
+        <!-- Dropdown within Navbar -->
+        <li
+          class="dropdown"
+          (mouseenter)="openDropdown()"
+          (mouseleave)="closeDropdown()"
+          [class.active-dropdown]="isRouteActive('/dienstleistungen')"
         >
-        <div class="dropdown-content" *ngIf="dropdownOpen">
-          <a routerLink="/dienstleistungen" fragment="tierkommunikation"
-            >Tierkommunikation</a
+          <a
+            class="dropdown-toggle"
+            routerLink="/dienstleistungen"
+            (click)="closeMobileMenu()"
           >
-          <a routerLink="/dienstleistungen" fragment="channeling">Channeling</a>
-          <a routerLink="/dienstleistungen" fragment="quantenheilung"
-            >Quantenheilung</a
-          >
-          <a routerLink="/dienstleistungen" fragment="buchen">Buchen</a>
-        </div>
-      </li>
-      <li routerLinkActive="active"><a routerLink="/contact">Kontakt</a></li>
-      <li routerLinkActive="active">
-        <a routerLink="/impressum">Impressum</a>
-      </li>
-    </ul>
+            Dienstleistungen <span class="dropdown-icon">▾</span>
+          </a>
+          <div class="dropdown-content" [class.show]="dropdownOpen">
+            <a
+              routerLink="/dienstleistungen/tierkommunikation"
+              (click)="closeMobileMenu()"
+              >Tierkommunikation</a
+            >
+            <a
+              routerLink="/dienstleistungen/channeling"
+              (click)="closeMobileMenu()"
+              >Channeling</a
+            >
+            <a
+              routerLink="/dienstleistungen/quantenheilung"
+              (click)="closeMobileMenu()"
+              >Quantenheilung</a
+            >
+            <a routerLink="/dienstleistungen/buchen" (click)="closeMobileMenu()"
+              >Buchen</a
+            >
+          </div>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/kontakt" (click)="closeMobileMenu()">Kontakt</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/impressum" (click)="closeMobileMenu()">Impressum</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

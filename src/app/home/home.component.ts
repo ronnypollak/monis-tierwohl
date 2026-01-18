@@ -8,4 +8,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(private router: Router) {}
+
+  /**
+   * Navigate to a specific route
+   * @param route The route to navigate to
+   */
+  navigateTo(route: string): void {
+    this.router.navigate([route]);
+  }
 }

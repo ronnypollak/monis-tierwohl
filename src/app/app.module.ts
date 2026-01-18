@@ -10,6 +10,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { StoryComponent } from './story/story.component';
+import { TierkommunikationComponent } from './tierkommunikation/tierkommunikation.component';
+import { ChannelingComponent } from './channeling/channeling.component';
+import { QuantenheilungComponent } from './quantenheilung/quantenheilung.component';
+import { BuchenComponent } from './buchen/buchen.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { StoryComponent } from './story/story.component';
     ServicesComponent,
     ExperiencesComponent,
     StoryComponent,
+    TierkommunikationComponent,
+    ChannelingComponent,
+    QuantenheilungComponent,
+    BuchenComponent,
+    KontaktComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

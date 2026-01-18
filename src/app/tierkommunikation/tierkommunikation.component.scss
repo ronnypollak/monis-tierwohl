@@ -1,0 +1,59 @@
+$header-text-color: white;
+
+.main-header {
+  background-image: url("../../assets/forest.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $header-text-color;
+  }
+}
+
+.main-header-menu {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      a {
+        display: block; // Make the anchor block-level
+        padding: 1rem;
+        color: $header-text-color;
+        text-decoration: none;
+        font-size: 2rem;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    text-align: left;
+
+    li {
+      position: relative;
+      padding-left: 25px; /* Space for custom bullet */
+      margin-bottom: 10px; /* Space between list items */
+
+      &::before {
+        content: "•"; /* Custom bullet */
+        position: absolute;
+        left: 0;
+        color: #3d1308; /* Custom bullet color */
+        font-size: 1.5rem; /* Custom bullet size */
+        line-height: 0.8; /* Align bullet with text */
+      }
+    }
+  }
+}
